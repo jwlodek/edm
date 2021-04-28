@@ -327,7 +327,7 @@ long edm_calcPerform(double *parg, double *presult, const char *pinst)
 	    break;
 
 	default:
-	    errlogPrintf("calcPerform: Bad Opcode %d at %p\n",*pinst, pinst);
+	//    errlogPrintf("calcPerform: Bad Opcode %d at %p\n",*pinst, pinst);
 	    return -1;
 	}
 

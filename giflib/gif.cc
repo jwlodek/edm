@@ -16,13 +16,13 @@
 //  along with this program; if not, write to the Free Software
 //  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-#if GIFLIB_MAJOR > 5 || GIFLIB_MAJOR == 5 && GIFLIB_MINOR >= 1
+//#if GIFLIB_MAJOR > 5 || GIFLIB_MAJOR == 5 && GIFLIB_MINOR >= 1
   #define GIF_CLOSE_FILE(gif) DGifCloseFile(gif, NULL)
   #define GIF_OPEN_FILE(gif) DGifOpenFileName(gif, NULL)
-#else
-  #define GIF_CLOSE_FILE(gif) DGifCloseFile(gif)
-  #define GIF_OPEN_FILE(gif) DGifOpenFileName(gif)
-#endif
+//#else
+//  #define GIF_CLOSE_FILE(gif) DGifCloseFile(gif)
+//  #define GIF_OPEN_FILE(gif) DGifOpenFileName(gif)
+//#endif
 
 void printErrMsg (
   const char *fileName,
